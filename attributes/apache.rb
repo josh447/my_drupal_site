@@ -18,8 +18,7 @@
 # limitations under the License.
 #
 
-site1 = 'example.com'
-version1 = '0.0.9'
+site1 = 'my_drupal_site'
 
 node.default['apache']['sites'][site1]['port']         = 80
 node.default['apache']['sites'][site1]['cookbook']     = 'my_drupal_site'
@@ -32,6 +31,5 @@ node.default['apache']['sites'][site1]['errorlog']     = "#{node['apache']['log_
 node.default['apache']['sites'][site1]['customlog']    = "#{node['apache']['log_dir']}/#{site1}-access.log combined"
 node.default['apache']['sites'][site1]['loglevel']     = 'warn'
 node.default['apache']['sites'][site1]['server_admin'] = 'demo@demo.com'
-node.default['apache']['sites'][site1]['revision'] = "v#{version1}"
 node.default['apache']['sites'][site1]['repository'] = 'https://github.com/mattjbarlow/drupal_skeleton.git'
 node.default['apache']['sites'][site1]['deploy_key'] = '/root/.ssh/id_rsa'

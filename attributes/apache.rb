@@ -18,7 +18,7 @@
 # limitations under the License.
 #
 
-site1 = '23.253.225.68'
+site1 = '104.130.132.167'
 
 node.default['apache']['sites'][site1]['port']         = 80
 node.default['apache']['sites'][site1]['cookbook']     = 'my_drupal_site'

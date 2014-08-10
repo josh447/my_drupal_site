@@ -18,13 +18,13 @@
 # limitations under the License.
 #
 
-site1 = 'my_drupal_site'
+site1 = '23.253.225.68'
 
 node.default['apache']['sites'][site1]['port']         = 80
 node.default['apache']['sites'][site1]['cookbook']     = 'my_drupal_site'
-node.default['apache']['sites'][site1]['template']     = "apache2/sites/#{site1}.erb"
+node.default['apache']['sites'][site1]['template']     = "apache2/sites/my_drupal_site.erb"
 node.default['apache']['sites'][site1]['server_name']  = site1
-node.default['apache']['sites'][site1]['server_alias'] = ["test.#{site1}", "www.#{site1}"]
+node.default['apache']['sites'][site1]['server_alias'] = ["#{site1}", "www.#{site1}"]
 node.default['apache']['sites'][site1]['docroot']      = "#{node['apache']['docroot_dir']}/#{site1}"
 node.default['apache']['sites'][site1]['allow_override'] = ['All']
 node.default['apache']['sites'][site1]['errorlog']     = "#{node['apache']['log_dir']}/#{site1}-error.log"

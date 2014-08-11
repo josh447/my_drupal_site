@@ -11,8 +11,8 @@
 
 driver:
   name: rackspace
-  rackspace_username: josh768
-  rackspace_api_key: 503865abac818518c4ec318a5cd7d969
+  rackspace_username: 
+  rackspace_api_key:
   require_chef_omnibus: true
 platforms:
   - name: ubuntu-12.04
